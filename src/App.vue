@@ -12,4 +12,14 @@ export default defineComponent({
 });
 </script>
 
-<style></style>
+<style>
+body {
+  margin: 0;
+  background-color: var(--background-color);
+}
+:root {
+  --background-color: #0a122a;
+  --second-color: #698f3f;
+  --text-color: #fbfaf8;
+}
+</style>
