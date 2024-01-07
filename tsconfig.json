@@ -4,6 +4,7 @@
     "module": "ESNext",
     "strict": true,
     "jsx": "preserve",
+    "resolveJsonModule": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "allowJs": true,
