@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Ideme na teambuilding",
+    "path": "/banners/teamBuilding_movie.jpg",
+    "desription": "Počas filmu sa diváci tešia na sériu komických situácií, vtipných hier a nečakaných zvratov, ktoré testujú odhodlanie tímu a prinášajú nekonečný zábavu. Ideme na Teambuilding je plný pozitívnej energie, ktorá vzniká zo vzájomnej podpory, pochopenia a spoločného odhodlania prekonať prekážky.",
+    "price": "9.50",
+    "link": "https://youtu.be/YVE6aBT8owg?si=M6-lx_TBveH0DeSv"
+  },
+  {
+    "id": 2,
+    "title": "Stastny novy rok 2",
+    "path": "/banners/Stastny_novy_rok_movie.jpg",
+    "desription": "V veselom pokračovaní Šťastného Nového Roku 2 sa diváci vrátia do sveta radosti, smiechu a neočakávaných dobrodružstiev. Príbeh sleduje skupinu nezabudnuteľných postáv, ktoré sa znova stretávajú v dojemnom príbehu o priateľstve, láske a nových začiatkoch.",
+    "price": "9.50",
+    "link": "https://youtu.be/Tr6piBPJhZM?si=SDisUT_8VuWse_EY"
+  },
+  {
+    "id": 3,
+    "title": "Bastard",
+    "path": "/banners/Bastard_movie.jpg",
+    "desription": "S atmosférickým napätím v pozadí je Bastard psychologickým thrillerom, ktorý udržuje divákov na pokraji sedačky. S hviezdny obsadením, intenzívnymi výkonmi a zamyslenou dejovou líniou film pozýva divákov k otázke rozhodnutí, ktoré robíme, a následkom, ktoré následujú. Nakoniec zanecháva divákov s neodbytným pocitom zvedavosti a napätia.",
+    "price": "9.50",
+    "link": "https://youtu.be/mhykzAzsV8M?si=WRLm71uj81kiSsnO"
+  }
+]
