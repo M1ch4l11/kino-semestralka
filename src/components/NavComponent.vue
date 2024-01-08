@@ -3,7 +3,7 @@
     <RouterLink to="/">
       <img class="brand" src="/brand_movie-removebg-preview.png"
     /></RouterLink>
-    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/">Domov</RouterLink>
     <RouterLink to="/Program">Program</RouterLink>
     <RouterLink to="/Kontakt">Kontakt</RouterLink>
   </nav>
