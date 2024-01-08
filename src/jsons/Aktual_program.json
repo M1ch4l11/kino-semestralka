@@ -1,0 +1,302 @@
+[
+  {
+    "id": "1",
+    "day": "Monday",
+    "content": [
+      {
+        "id": 1,
+        "title": "Začiatok",
+        "path": "/banners/inception.jpg",
+        "description": "Zručný zlodej vstupuje do snov iných, aby ukradol ich najhlbšie tajomstvá. Inception je ohromujúci thriller v réžii Christophera Nolana.",
+        "time": "16:00",
+        "price": "12,99",
+        "link": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+      },
+      {
+        "id": 2,
+        "title": "Vykúpenie z väznice Shawshank",
+        "path": "/banners/shawshank_redemption.jpg",
+        "description": "Andy Dufresne, bankár, je odsúdený na doživotie v Štátnej väznici Shawshank za vraždy svojej manželky a jej milenca. Inšpirujúci príbeh o nádeji a priateľstve.",
+        "time": "16:00",
+        "price": "11,50",
+        "link": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 3,
+        "title": "Temný rytier",
+        "path": "/banners/dark_knight.jpg",
+        "description": "Batman čelí Jokerovi, zločincovi, v boji chaosu a poriadku. Temný rytier, ktorý režíroval Christopher Nolan, je strhujúci superhrdinský film.",
+        "time": "18:00",
+        "price": "14,75",
+        "link": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
+      },
+      {
+        "id": 4,
+        "title": "Titanic",
+        "path": "/banners/titanic.jpg",
+        "description": "Na nešťastnej prvej plavbe RMS Titanic sa odvíja milostný príbeh. Titanic, ktorý režíroval James Cameron, je klasickým romantickým a katastrofickým filmom.",
+        "time": "18:00",
+        "price": "9,99",
+        "link": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+      },
+      {
+        "id": 5,
+        "title": "Pulp Fiction",
+        "path": "/banners/pulp_fiction.jpg",
+        "description": "Ikonický film Quentina Tarantina spája viacero vzájomne prepojených príbehov zahŕňajúcich zločin a vykúpenie. Pulp Fiction je známy svojim nelineárnym rozprávaním.",
+        "time": "20:00",
+        "price": "13,25",
+        "link": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
+      },
+      {
+        "id": 6,
+        "title": "Krstný otec",
+        "path": "/banners/godfather.jpg",
+        "description": "Silná kriminálna rodinná sága Krstný otec, ktorú režíroval Francis Ford Coppola, skúma zložitosť moci, lojality a rodinnej dynamiky.",
+        "time": "20:00",
+        "price": "12,50",
+        "link": "https://www.youtube.com/watch?v=sY1S34973zA"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "day": "Tuesday",
+    "content": [
+      {
+        "id": 1,
+        "title": "Začiatok",
+        "path": "/banners/inception.jpg",
+        "description": "Zručný zlodej vstupuje do snov iných, aby ukradol ich najhlbšie tajomstvá. Inception je ohromujúci thriller v réžii Christophera Nolana.",
+        "time": "16:00",
+        "price": "12,99",
+        "link": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+      },
+      {
+        "id": 2,
+        "title": "Vykúpenie z väznice Shawshank",
+        "path": "/banners/shawshank_redemption.jpg",
+        "description": "Andy Dufresne, bankár, je odsúdený na doživotie v Štátnej väznici Shawshank za vraždy svojej manželky a jej milenca. Inšpirujúci príbeh o nádeji a priateľstve.",
+        "time": "16:00",
+        "price": "11,50",
+        "link": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 3,
+        "title": "Forrest Gump",
+        "path": "/banners/forrest_gump.jpg",
+        "description": "Forrest Gump v podaní Toma Hanksa nás prevedie desaťročiami americkej histórie so svojou jedinečnou perspektívou a mimoriadnymi životnými skúsenosťami.",
+        "time": "18:00",
+        "price": "11,99",
+        "link": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+      },
+      {
+        "id": 4,
+        "title": "Titanic",
+        "path": "/banners/titanic.jpg",
+        "description": "Na nešťastnej prvej plavbe RMS Titanic sa odvíja milostný príbeh. Titanic, ktorý režíroval James Cameron, je klasickým romantickým a katastrofickým filmom.",
+        "time": "18:00",
+        "price": "9,99",
+        "link": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+      },
+      {
+        "id": 5,
+        "title": "Pulp Fiction",
+        "path": "/banners/pulp_fiction.jpg",
+        "description": "Ikonický film Quentina Tarantina spája viacero vzájomne prepojených príbehov zahŕňajúcich zločin a vykúpenie. Pulp Fiction je známy svojim nelineárnym rozprávaním.",
+        "time": "20:00",
+        "price": "13,25",
+        "link": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
+      },
+      {
+        "id": 6,
+        "title": "Krstný otec",
+        "path": "/banners/godfather.jpg",
+        "description": "Silná kriminálna rodinná sága Krstný otec, ktorú režíroval Francis Ford Coppola, skúma zložitosť moci, lojality a rodinnej dynamiky.",
+        "time": "20:00",
+        "price": "12,50",
+        "link": "https://www.youtube.com/watch?v=sY1S34973zA"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "day": "Wednesday",
+    "content": [
+      {
+        "id": 1,
+        "title": "Začiatok",
+        "path": "/banners/inception.jpg",
+        "description": "Zručný zlodej vstupuje do snov iných, aby ukradol ich najhlbšie tajomstvá. Inception je ohromujúci thriller v réžii Christophera Nolana.",
+        "time": "16:00",
+        "price": "12,99",
+        "link": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+      },
+      {
+        "id": 2,
+        "title": "Vykúpenie z väznice Shawshank",
+        "path": "/banners/shawshank_redemption.jpg",
+        "description": "Andy Dufresne, bankár, je odsúdený na doživotie v Štátnej väznici Shawshank za vraždy svojej manželky a jej milenca. Inšpirujúci príbeh o nádeji a priateľstve.",
+        "time": "16:00",
+        "price": "11,50",
+        "link": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 3,
+        "title": "Forrest Gump",
+        "path": "/banners/forrest_gump.jpg",
+        "description": "Forrest Gump v podaní Toma Hanksa nás prevedie desaťročiami americkej histórie so svojou jedinečnou perspektívou a mimoriadnymi životnými skúsenosťami.",
+        "time": "18:00",
+        "price": "11,99",
+        "link": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+      },
+      {
+        "id": 4,
+        "title": "Titanic",
+        "path": "/banners/titanic.jpg",
+        "description": "Na nešťastnej prvej plavbe RMS Titanic sa odvíja milostný príbeh. Titanic, ktorý režíroval James Cameron, je klasickým romantickým a katastrofickým filmom.",
+        "time": "18:00",
+        "price": "9,99",
+        "link": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+      },
+      {
+        "id": 5,
+        "title": "Pulp Fiction",
+        "path": "/banners/pulp_fiction.jpg",
+        "description": "Ikonický film Quentina Tarantina spája viacero vzájomne prepojených príbehov zahŕňajúcich zločin a vykúpenie. Pulp Fiction je známy svojim nelineárnym rozprávaním.",
+        "time": "20:00",
+        "price": "13,25",
+        "link": "https://www.youtube.com/watch?v=s7EdQ4FqbhY"
+      },
+      {
+        "id": 6,
+        "title": "Krstný otec",
+        "path": "/banners/godfather.jpg",
+        "description": "Silná kriminálna rodinná sága Krstný otec, ktorú režíroval Francis Ford Coppola, skúma zložitosť moci, lojality a rodinnej dynamiky.",
+        "time": "20:00",
+        "price": "12,50",
+        "link": "https://www.youtube.com/watch?v=sY1S34973zA"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "day": "Thursday",
+    "content": [
+      {
+        "id": 1,
+        "title": "Začiatok",
+        "path": "/banners/inception.jpg",
+        "description": "Zručný zlodej vstupuje do snov iných, aby ukradol ich najhlbšie tajomstvá. Inception je ohromujúci thriller v réžii Christophera Nolana.",
+        "time": "16:00",
+        "price": "12,99",
+        "link": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+      },
+      {
+        "id": 2,
+        "title": "Vykúpenie z väznice Shawshank",
+        "path": "/banners/shawshank_redemption.jpg",
+        "description": "Andy Dufresne, bankár, je odsúdený na doživotie v Štátnej väznici Shawshank za vraždy svojej manželky a jej milenca. Inšpirujúci príbeh o nádeji a priateľstve.",
+        "time": "16:00",
+        "price": "11,50",
+        "odkaz": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 3,
+        "title": "Forrest Gump",
+        "path": "/banners/forrest_gump.jpg",
+        "description": "Forrest Gump v podaní Toma Hanksa nás prevedie desaťročiami americkej histórie so svojou jedinečnou perspektívou a mimoriadnymi životnými skúsenosťami.",
+        "time": "18:00",
+        "price": "11,99",
+        "link": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+      },
+      {
+        "id": 4,
+        "title": "Titanic",
+        "path": "/banners/titanic.jpg",
+        "description": "Na nešťastnej prvej plavbe RMS Titanic sa odvíja milostný príbeh. Titanic, ktorý režíroval James Cameron, je klasickým romantickým a katastrofickým filmom.",
+        "time": "18:00",
+        "price": "9,99",
+        "link": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+      },
+      {
+        "id": 5,
+        "title": "Matrix",
+        "path": "/banners/matrix.jpg",
+        "description": "Počítačový hacker Neo, objaví pravdu o realite a pripojí sa k vzbure proti vnímavým strojom. Matrix je prelomový akčný sci-fi film.",
+        "time": "20:00",
+        "cena": "14,50",
+        "link": "https://www.youtube.com/watch?v=m8e-FF8MsqU"
+      },
+      {
+        "id": 6,
+        "title": "Krstný otec",
+        "path": "/banners/godfather.jpg",
+        "description": "Silná kriminálna rodinná sága Krstný otec, ktorú režíroval Francis Ford Coppola, skúma zložitosť moci, lojality a rodinnej dynamiky.",
+        "time": "20:00",
+        "price": "12,50",
+        "link": "https://www.youtube.com/watch?v=sY1S34973zA"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "day": "Friday",
+    "content": [
+      {
+        "id": 1,
+        "title": "Začiatok",
+        "path": "/banners/inception.jpg",
+        "description": "Zručný zlodej vstupuje do snov iných, aby ukradol ich najhlbšie tajomstvá. Inception je ohromujúci thriller v réžii Christophera Nolana.",
+        "time": "16:00",
+        "price": "12,99",
+        "link": "https://www.youtube.com/watch?v=YoHD9XEInc0"
+      },
+      {
+        "id": 2,
+        "title": "Vykúpenie z väznice Shawshank",
+        "path": "/banners/shawshank_redemption.jpg",
+        "description": "Andy Dufresne, bankár, je odsúdený na doživotie v Štátnej väznici Shawshank za vraždy svojej manželky a jej milenca. Inšpirujúci príbeh o nádeji a priateľstve.",
+        "time": "16:00",
+        "price": "11,50",
+        "link": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+      },
+      {
+        "id": 3,
+        "title": "Forrest Gump",
+        "path": "/banners/forrest_gump.jpg",
+        "description": "Forrest Gump v podaní Toma Hanksa nás prevedie desaťročiami americkej histórie so svojou jedinečnou perspektívou a mimoriadnymi životnými skúsenosťami.",
+        "time": "18:00",
+        "price": "11,99",
+        "link": "https://www.youtube.com/watch?v=bLvqoHBptjg"
+      },
+      {
+        "id": 4,
+        "title": "Titanic",
+        "path": "/banners/titanic.jpg",
+        "description": "Na nešťastnej prvej plavbe RMS Titanic sa odvíja milostný príbeh. Titanic, ktorý režíroval James Cameron, je klasickým romantickým a katastrofickým filmom.",
+        "time": "18:00",
+        "price": "9,99",
+        "link": "https://www.youtube.com/watch?v=2e-eXJ6HgkQ"
+      },
+      {
+        "id": 5,
+        "title": "Matrix",
+        "path": "/banners/matrix.jpg",
+        "description": "Počítačový hacker Neo, objaví pravdu o realite a pripojí sa k vzbure proti vnímavým strojom. Matrix je prelomový akčný sci-fi film.",
+        "time": "20:00",
+        "price": "14,50",
+        "link": "https://www.youtube.com/watch?v=m8e-FF8MsqU"
+      },
+      {
+        "id": 6,
+        "title": "Krstný otec",
+        "path": "/banners/godfather.jpg",
+        "description": "Silná kriminálna rodinná sága Krstný otec, ktorú režíroval Francis Ford Coppola, skúma zložitosť moci, lojality a rodinnej dynamiky.",
+        "time": "20:00",
+        "price": "12,50",
+        "link": "https://www.youtube.com/watch?v=sY1S34973zA"
+      }
+    ]
+  }
+]
