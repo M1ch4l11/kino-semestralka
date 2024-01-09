@@ -6,6 +6,9 @@
     <RouterLink to="/">Domov</RouterLink>
     <RouterLink to="/Program">Program</RouterLink>
     <RouterLink to="/Kontakt">Kontakt</RouterLink>
+    <RouterLink to="/Basket"
+      ><img class="basket-img" src="/basket_icon.png"
+    /></RouterLink>
   </nav>
 </template>
 
@@ -35,6 +38,13 @@ nav {
     margin: 5px;
     &:hover {
       color: var(--background-color);
+    }
+  }
+  .basket-img {
+    height: 40px;
+    opacity: 0.5;
+    &:hover {
+      opacity: 1;
     }
   }
 }
