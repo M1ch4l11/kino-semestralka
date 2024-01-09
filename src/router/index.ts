@@ -22,6 +22,11 @@ const routes = [
     component: () => import("@/pages/ProgramPage.vue"),
   },
   {
+    path: "/basket",
+    name: "Basket",
+    component: () => import("@/components/ShoppingCardComponent.vue"),
+  },
+  {
     path: "/:pathMatch(.*)*",
     name: "NotFound",
     component: () => import("@/pages/NotFound.vue"),

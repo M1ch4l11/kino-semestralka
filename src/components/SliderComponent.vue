@@ -7,26 +7,17 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import ItemComponent from "@/components/ItemComponent.vue";
-// import { FilmItem } from "@/interfaces/Film-interface";
+import { FilmItem } from "@/interfaces/Film-interface";
 
 export default defineComponent({
   name: "SliderComponent",
   props: {
-    films: {
-      type: Array(),
-      required: true,
-    },
+    films: Array<FilmItem>,
   },
   components: {
     ItemComponent,
   },
-  computed: {
-    reversedMessage() {
-      // This computed property depends on the 'message' data property
-      console.log(this.films);
-      return null;
-    },
-  },
+  computed: {},
 });
 </script>
 

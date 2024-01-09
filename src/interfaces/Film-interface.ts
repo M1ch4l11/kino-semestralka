@@ -10,7 +10,14 @@ export interface FilmItem {
   title: string;
   path: string;
   description: string;
-  price: string;
   time: string;
+  price: number;
   link: string;
+}
+
+export interface BasketItem {
+  imagePath: string;
+  countOfTickets: number;
+  time: string;
+  price: number;
 }
