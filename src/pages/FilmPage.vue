@@ -1,5 +1,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
+import { BasketItem, FilmItem } from "@/interfaces/Film-interface";
+import { useBasketStore } from "@/stores/BasketStore";
 
 export default defineComponent({
   name: "CardComponent",
@@ -10,12 +12,23 @@ export default defineComponent({
   },
   props: {},
   components: {},
-  computed: {},
+  computed: {
+    basketStore() {
+      return useBasketStore();
+    },
+  },
   methods: {
-    zajednatListok(): void {
-      //   9.5 * this.tiketsNumber Ulozit do statu a zobrazit v kosiku  = price
-      //   pocet listkov = countOfTickets
-      //   path na obrazok = imagePath
+    zajednatListok(filmItem: FilmItem): void {
+      this.basketStore.addItem(this.getBasketItem(filmItem));
+      this.basketStore.totalPrice += filmItem.price * this.tiketsNumber;
+    },
+    getBasketItem(filmItem: FilmItem): BasketItem {
+      return {
+        imagePath: filmItem.path,
+        countOfTickets: this.tiketsNumber,
+        time: filmItem.time,
+        price: filmItem.price,
+      };
     },
   },
 });
@@ -23,8 +36,8 @@ export default defineComponent({
 
 <template>
   <!-- Obrazok, popis, cena -->
-  <div class="film-content">
-    <img src="/banners/teamBuilding_movie.jpg" alt="" />
+  <div class="film-content" v-if="basketStore.filmItem.path">
+    <img :src="basketStore.filmItem.path" alt="Not Found :-(" />
     <div class="film-info">
       <p>
         Počas filmu sa diváci tešia na sériu komických situácií, vtipných hier a
@@ -36,14 +49,14 @@ export default defineComponent({
       <iframe
         width="560"
         height="315"
-        src="https://www.youtube.com/embed/YVE6aBT8owg?si=d3F0cimuw2ZmUB1s"
+        :src="basketStore.filmItem.link"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <p>18:00</p>
-      <h4>15.50€</h4>
+      <p>{{ basketStore.filmItem.time }}</p>
+      <h4>{{ basketStore.filmItem.price }}€</h4>
       <label for="ticketNumber"></label>
       <input
         class="ticket-number"
@@ -51,7 +64,7 @@ export default defineComponent({
         id="ticketNumber"
         v-model="tiketsNumber"
       />
-      <button class="zajednat" @click="zajednatListok()">
+      <button class="zajednat" @click="zajednatListok(basketStore.filmItem)">
         Zajednat listky
       </button>
     </div>
@@ -63,7 +76,8 @@ export default defineComponent({
 .film-content {
   display: flex;
   img {
-    height: 80vh;
+    height: 40vh;
+    width: 60vh;
     margin: 16px;
     margin-right: 0px;
   }
