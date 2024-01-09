@@ -2,12 +2,12 @@
   <div class="film" v-if="film">
     <!-- cez cely component bude obrazok-->
     <img class="image" :src="film.path" ta />
-    <div class="modal-hover" @click="openCard(film)">
+    <div class="modal-hover">
       <p>{{ film.time }}</p>
       <h4>{{ film.price }}€</h4>
       <!-- kratky opisny text zobrazujuci sa pri mouse hover, 
             bude mcez cele a mat backgrout opacity 0.7-->
-      <RouterLink to="/Film">Zistit viac</RouterLink>
+      <RouterLink @click="openCard(film)" to="/Film">Zistit viac</RouterLink>
       <p>{{ film.description }}</p>
     </div>
   </div>
@@ -15,16 +15,28 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-// import { FilmItem } from "@/interfaces/Film-interface";
+import { FilmItem } from "@/interfaces/Film-interface";
+import { useBasketStore } from "@/stores/BasketStore";
 export default defineComponent({
   name: "ItemComponent",
   props: {
     film: null,
   },
   methods: {
-    openCard(film: Object): void {
-      // save in store film
-      console.log(film);
+    openCard(film: FilmItem): void {
+      // film nema type...
+      if (this.isFilmItem(film)) {
+        this.basketStore.filmItem = film;
+        console.log(this.basketStore.filmItem);
+      }
+    },
+    isFilmItem(obj: any): obj is FilmItem {
+      return typeof obj === "object";
+    },
+  },
+  computed: {
+    basketStore() {
+      return useBasketStore();
     },
   },
 });
