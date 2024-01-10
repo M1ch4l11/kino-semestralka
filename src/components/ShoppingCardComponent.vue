@@ -9,7 +9,6 @@ export default defineComponent({
     return {
       name: "",
       email: "",
-      // eslint-disable-next-line no-undef
       toaster: {
         titleToaster: "",
         messageToaster: "",
@@ -17,7 +16,6 @@ export default defineComponent({
       },
     };
   },
-  props: {},
   components: { ToasterComponent },
   computed: {
     basketStore() {
@@ -26,17 +24,20 @@ export default defineComponent({
   },
   methods: {
     order(): void {
-      if (this.validOrder()) {
-        this.basketStore.$reset();
-        this.toaster.titleToaster = " Objednavka odoslana " + this.name;
-        this.toaster.messageToaster =
-          " Platit aj vyberat si miesto budete na mieste ";
-        this.toaster.show = true;
-        return;
-      }
-      this.toaster.titleToaster = " !!Vyplnte udaje!!" + this.name;
-      this.toaster.messageToaster = " Nie je mozne zaslat objednavku. ";
+      this.actionToaster(this.validOrder());
+      this.basketStore.$reset();
+    },
+    actionToaster(valid: boolean): void {
+      this.toaster.titleToaster = valid
+        ? " Objednavka odoslana " + this.name
+        : " !!Vyplnte udaje!!" + this.name;
+      this.toaster.messageToaster = valid
+        ? " Platit aj vyberat si miesto budete na mieste "
+        : " Nie je mozne zaslat objednavku. ";
       this.toaster.show = true;
+      setTimeout(() => {
+        this.toaster.show = false;
+      }, 2000);
     },
     validOrder(): boolean {
       return this.basketStore.totalPrice != 0 && !!this.name && !!this.email;
@@ -78,7 +79,6 @@ export default defineComponent({
   ></ToasterComponent>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .basket-wrapper {
   display: flex;
@@ -98,6 +98,7 @@ export default defineComponent({
       }
       p {
         color: var(--text-color);
+        font-size: x-large;
         width: 120px;
         margin: 0;
         padding: 8px;

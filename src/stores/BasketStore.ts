@@ -25,14 +25,16 @@ export const useBasketStore = defineStore("basket", {
       this.basketItems.push(item);
     },
     sumTutalPrice(price: number) {
-      this.totalPrice += price;
+      this.totalPrice = Math.round(this.totalPrice + price);
     },
     deleteItem(item: BasketItem) {
       const index = this.basketItems.findIndex(
         (basketItem) => basketItem.imagePath === item.imagePath
       );
-      this.totalPrice -=
-        this.basketItems[index].price * this.basketItems[index].countOfTickets;
+      this.totalPrice = Math.round(
+        this.totalPrice -
+          this.basketItems[index].price * this.basketItems[index].countOfTickets
+      );
       return index > -1 ? this.basketItems.splice(index, 1) : false;
     },
     $reset() {

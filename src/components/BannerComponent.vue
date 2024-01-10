@@ -16,7 +16,7 @@ export default defineComponent({
     <img class="movie-image" :src="imagePath" alt="Not Found" />
     <div class="description-wrapper">
       <p>{{ description }}</p>
-      <h3>{{ price }} €</h3>
+      <h3>Cena: {{ price }} €</h3>
       <a :href="link" target="_blank">
         <img class="play-image" src="/play_icon.png"
       /></a>
@@ -24,8 +24,7 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 .container {
   display: flex;
   .movie-image {

@@ -22,7 +22,6 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .day-container {
   margin-top: 90px;

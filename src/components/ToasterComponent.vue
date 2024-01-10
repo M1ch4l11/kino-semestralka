@@ -4,7 +4,7 @@ export default defineComponent({
   name: "ToasterComponent",
   props: {
     title: String,
-    message: String, // add type of message
+    message: String,
   },
   components: {},
   methods: {},
@@ -18,7 +18,6 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .toaster-container {
   color: var(--text-color);

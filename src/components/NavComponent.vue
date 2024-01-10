@@ -20,7 +20,7 @@ export default defineComponent({
   </nav>
 </template>
 
-<style scoped>
+<style>
 nav {
   width: 100%;
   height: 10vh;

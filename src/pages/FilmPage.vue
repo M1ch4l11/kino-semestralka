@@ -16,7 +16,6 @@ export default defineComponent({
       },
     };
   },
-  props: {},
   components: { ToasterComponent },
   computed: {
     basketStore() {
@@ -40,6 +39,9 @@ export default defineComponent({
           ? " Boli uspesne pridane do kosika "
           : " Bol uspesne pridany do kosika ";
       this.toaster.show = true;
+      setTimeout(() => {
+        this.toaster.show = false;
+      }, 2000);
     },
     getBasketItem(filmItem: FilmItem): BasketItem {
       return {
@@ -54,7 +56,6 @@ export default defineComponent({
 </script>
 
 <template>
-  <!-- Obrazok, popis, cena -->
   <ToasterComponent
     v-if="toaster.show"
     :title="toaster.titleToaster"
@@ -64,23 +65,19 @@ export default defineComponent({
     <img :src="basketStore.filmItem.path" alt="Not Found :-(" />
     <div class="film-info">
       <p>
-        Počas filmu sa diváci tešia na sériu komických situácií, vtipných hier a
-        nečakaných zvratov, ktoré testujú odhodlanie tímu a prinášajú nekonečný
-        zábavu. Ideme na Teambuilding je plný pozitívnej energie, ktorá vzniká
-        zo vzájomnej podpory, pochopenia a spoločného odhodlania prekonať
-        prekážky.
+        {{ basketStore.filmItem.description }}
       </p>
       <iframe
+        v-if="basketStore.filmItem.linkIframe"
         width="560"
         height="315"
         :src="basketStore.filmItem.linkIframe"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen
       ></iframe>
-      <p>{{ basketStore.filmItem.time }}</p>
-      <h4>{{ basketStore.filmItem.price }}€</h4>
+      <p>Čas: {{ basketStore.filmItem.time }}</p>
+      <h4>Cena: {{ basketStore.filmItem.price }}€</h4>
       <label for="ticketNumber"></label>
       <input
         class="ticket-number"
@@ -95,7 +92,6 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .film-content {
   display: flex;

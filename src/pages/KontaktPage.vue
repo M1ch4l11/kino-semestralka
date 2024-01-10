@@ -4,19 +4,9 @@ import { useBasketStore } from "@/stores/BasketStore";
 
 export default defineComponent({
   name: "KontaktPage",
-  data() {
-    return {};
-  },
-  props: {},
-  components: {},
   computed: {
     basketStore() {
       return useBasketStore();
-    },
-  },
-  methods: {
-    order(): void {
-      // zobrazenie toasteru a vycistenie statu...
     },
   },
 });
@@ -27,10 +17,10 @@ export default defineComponent({
     <div class="kontakt-content">
       <div class="adress">
         <h2>3D kino Partizanske</h2>
-        <p>Generála Svobodu 1141/3, 958 01</p>
-        <p>Partizanske</p>
-        <p>958 01</p>
-        <h3>+421964536743</h3>
+        <p>Ulica: Generála Svobodu 1141/3, 958 01</p>
+        <p>Mesto: Partizanske</p>
+        <p>PSC: 958 01</p>
+        <h3>Tel.Cislo: +421964536743</h3>
       </div>
       <iframe
         class="map"
@@ -45,7 +35,6 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .kontakt-container {
   display: flex;

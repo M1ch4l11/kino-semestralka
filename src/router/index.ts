@@ -26,11 +26,11 @@ const routes = [
     name: "Basket",
     component: () => import("@/components/ShoppingCardComponent.vue"),
   },
-  {
-    path: "/:pathMatch(.*)*",
-    name: "NotFound",
-    component: () => import("@/pages/NotFound.vue"),
-  },
+  // {
+  //   path: "/:pathMatch(.*)*",
+  //   name: "NotFound",
+  //   component: () => import("@/pages/NotFound.vue"),
+  // },
 ];
 
 const router = createRouter({

@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "day": "Monday",
+    "day": "Pondelok",
     "content": [
       {
         "id": 1,
@@ -67,7 +67,7 @@
   },
   {
     "id": "2",
-    "day": "Tuesday",
+    "day": "Utorok",
     "content": [
       {
         "id": 1,
@@ -133,7 +133,7 @@
   },
   {
     "id": "3",
-    "day": "Wednesday",
+    "day": "Streda",
     "content": [
       {
         "id": 1,
@@ -199,7 +199,7 @@
   },
   {
     "id": "4",
-    "day": "Thursday",
+    "day": "Štvrtok",
     "content": [
       {
         "id": 1,
@@ -265,7 +265,7 @@
   },
   {
     "id": "5",
-    "day": "Friday",
+    "day": "Piatok",
     "content": [
       {
         "id": 1,

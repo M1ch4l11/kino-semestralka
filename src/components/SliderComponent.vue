@@ -21,7 +21,6 @@ export default defineComponent({
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 .films-container {
   height: 200;
