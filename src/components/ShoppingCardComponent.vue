@@ -21,11 +21,17 @@
     <input type="email" placeholder="kpavlovova@gmail.com" v-model="email" />
     <button class="zajednat" @click="order()">Zajednat</button>
   </div>
+  <ToasterComponent
+    v-if="toaster.show"
+    :title="toaster.titleToaster"
+    :message="toaster.messageToaster"
+  ></ToasterComponent>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useBasketStore } from "@/stores/BasketStore";
+import ToasterComponent from "@/components/ToasterComponent.vue";
 
 export default defineComponent({
   name: "ShoppingCard",
@@ -33,11 +39,16 @@ export default defineComponent({
     return {
       name: "",
       email: "",
-      totalPrice: 0,
+      // eslint-disable-next-line no-undef
+      toaster: {
+        titleToaster: "",
+        messageToaster: "",
+        show: false,
+      },
     };
   },
   props: {},
-  components: {},
+  components: { ToasterComponent },
   computed: {
     basketStore() {
       return useBasketStore();
@@ -45,9 +56,21 @@ export default defineComponent({
   },
   methods: {
     order(): void {
-      // zobrazenie toasteru a vycistenie statu...
+      if (this.validOrder()) {
+        this.basketStore.$reset();
+        this.toaster.titleToaster = " Objednavka odoslana " + this.name;
+        this.toaster.messageToaster =
+          " Platit aj vyberat si miesto budete na mieste ";
+        this.toaster.show = true;
+        return;
+      }
+      this.toaster.titleToaster = " !!Vyplnte udaje!!" + this.name;
+      this.toaster.messageToaster = " Nie je mozne zaslat objednavku. ";
+      this.toaster.show = true;
     },
-    delete(): void {},
+    validOrder(): boolean {
+      return this.basketStore.totalPrice != 0 && !!this.name && !!this.email;
+    },
   },
 });
 </script>

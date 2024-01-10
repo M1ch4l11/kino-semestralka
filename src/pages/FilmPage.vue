@@ -2,16 +2,22 @@
 import { defineComponent } from "vue";
 import { BasketItem, FilmItem } from "@/interfaces/Film-interface";
 import { useBasketStore } from "@/stores/BasketStore";
+import ToasterComponent from "@/components/ToasterComponent.vue";
 
 export default defineComponent({
   name: "CardComponent",
   data() {
     return {
-      tiketsNumber: 0,
+      tiketsNumber: 1,
+      toaster: {
+        titleToaster: "",
+        messageToaster: "",
+        show: false,
+      },
     };
   },
   props: {},
-  components: {},
+  components: { ToasterComponent },
   computed: {
     basketStore() {
       return useBasketStore();
@@ -21,6 +27,18 @@ export default defineComponent({
     zajednatListok(filmItem: FilmItem): void {
       this.basketStore.addItem(this.getBasketItem(filmItem));
       this.basketStore.totalPrice += filmItem.price * this.tiketsNumber;
+      this.setToasterMessage(filmItem);
+    },
+    setToasterMessage(filmItem: FilmItem): void {
+      this.toaster.titleToaster =
+        this.tiketsNumber > 1
+          ? " Listky na film " + filmItem.title
+          : " Listok na film " + filmItem.title;
+      this.toaster.messageToaster =
+        this.tiketsNumber > 1
+          ? " Boli uspesne pridane do kosika "
+          : " Bol uspesne pridany do kosika ";
+      this.toaster.show = true;
     },
     getBasketItem(filmItem: FilmItem): BasketItem {
       return {
@@ -36,6 +54,11 @@ export default defineComponent({
 
 <template>
   <!-- Obrazok, popis, cena -->
+  <ToasterComponent
+    v-if="toaster.show"
+    :title="toaster.titleToaster"
+    :message="toaster.messageToaster"
+  ></ToasterComponent>
   <div class="film-content" v-if="basketStore.filmItem.path">
     <img :src="basketStore.filmItem.path" alt="Not Found :-(" />
     <div class="film-info">
