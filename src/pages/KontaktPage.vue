@@ -17,9 +17,9 @@ export default defineComponent({
     <div class="kontakt-content">
       <div class="adress">
         <h2>3D kino Partizanske</h2>
-        <p>Ulica: Generála Svobodu 1141/3, 958 01</p>
-        <p>Mesto: Partizanske</p>
-        <p>PSC: 958 01</p>
+        <p>Generála Svobodu 1141/3, 958 01</p>
+        <p>Partizanske</p>
+        <p>958 01</p>
         <h3>Tel.Cislo: +421964536743</h3>
       </div>
       <iframe
