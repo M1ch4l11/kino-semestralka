@@ -25,7 +25,7 @@ export default defineComponent({
   methods: {
     order(): void {
       this.actionToaster(this.validOrder());
-      this.basketStore.$reset();
+      this.validOrder() ? this.basketStore.$reset() : "";
     },
     actionToaster(valid: boolean): void {
       this.toaster.titleToaster = valid
@@ -128,6 +128,8 @@ export default defineComponent({
     }
     input {
       margin: 8px;
+      border-radius: 15px;
+      border: none;
     }
     .zajednat {
       background-color: var(--background-color);

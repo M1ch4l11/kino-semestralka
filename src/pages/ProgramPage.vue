@@ -16,9 +16,9 @@ export default defineComponent({
 </script>
 
 <template v-if="AktualProgram">
-  <div class="day-container" v-for="day in AktualProgram" :key="day.id">
-    <h2>{{ day.day }}</h2>
-    <SliderComponent :films="day.content"></SliderComponent>
+  <div class="day-container" v-for="dayItem in AktualProgram" :key="dayItem.id">
+    <h2>{{ dayItem.day }}</h2>
+    <SliderComponent :films="dayItem.content"></SliderComponent>
   </div>
 </template>
 
