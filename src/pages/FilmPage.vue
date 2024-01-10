@@ -96,7 +96,7 @@ export default defineComponent({
 .film-content {
   display: flex;
   img {
-    height: 72vh;
+    height: 73.3vh;
     width: 60vh;
     margin: 16px;
     margin-right: 0px;
