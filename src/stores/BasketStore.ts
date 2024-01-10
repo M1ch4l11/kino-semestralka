@@ -30,7 +30,8 @@ export const useBasketStore = defineStore("basket", {
       const index = this.basketItems.findIndex(
         (basketItem) => basketItem.imagePath === item.imagePath
       );
-      this.totalPrice = 0;
+      this.totalPrice -=
+        this.basketItems[index].price * this.basketItems[index].countOfTickets;
       return index > -1 ? this.basketItems.splice(index, 1) : false;
     },
     $reset() {
