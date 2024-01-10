@@ -1,10 +1,3 @@
-<template>
-  <div class="toaster-container">
-    <h4>{{ title }}</h4>
-    <p>{{ message }}</p>
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 export default defineComponent({
@@ -17,6 +10,13 @@ export default defineComponent({
   methods: {},
 });
 </script>
+
+<template>
+  <div class="toaster-container">
+    <h4>{{ title }}</h4>
+    <p>{{ message }}</p>
+  </div>
+</template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

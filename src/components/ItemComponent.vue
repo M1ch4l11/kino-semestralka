@@ -1,18 +1,3 @@
-<template>
-  <div class="film" v-if="film">
-    <!-- cez cely component bude obrazok-->
-    <img class="image" :src="film.path" ta />
-    <div class="modal-hover">
-      <p>{{ film.time }}</p>
-      <h4>{{ film.price }}€</h4>
-      <!-- kratky opisny text zobrazujuci sa pri mouse hover, 
-            bude mcez cele a mat backgrout opacity 0.7-->
-      <RouterLink @click="openCard(film)" to="/Film">Zistit viac</RouterLink>
-      <p>{{ film.description }}</p>
-    </div>
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 import { FilmItem } from "@/interfaces/Film-interface";
@@ -41,6 +26,21 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="film" v-if="film">
+    <!-- cez cely component bude obrazok-->
+    <img class="image" :src="film.path" ta />
+    <div class="modal-hover">
+      <p>{{ film.time }}</p>
+      <h4>{{ film.price }}€</h4>
+      <!-- kratky opisny text zobrazujuci sa pri mouse hover, 
+            bude mcez cele a mat backgrout opacity 0.7-->
+      <RouterLink @click="openCard(film)" to="/Film">Zistit viac</RouterLink>
+      <p>{{ film.description }}</p>
+    </div>
+  </div>
+</template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

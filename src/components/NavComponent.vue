@@ -1,3 +1,11 @@
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
+  name: "NavComponent",
+});
+</script>
+
 <template>
   <nav>
     <RouterLink to="/">
@@ -11,14 +19,6 @@
     /></RouterLink>
   </nav>
 </template>
-
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  name: "NavComponent",
-});
-</script>
 
 <style scoped>
 nav {

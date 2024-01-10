@@ -17,6 +17,7 @@ export const useBasketStore = defineStore("basket", {
       price: 0,
       time: "",
       link: "",
+      linkIframe: "",
     },
   }),
   actions: {
@@ -45,6 +46,7 @@ export const useBasketStore = defineStore("basket", {
         price: 0,
         time: "",
         link: "",
+        linkIframe: "",
       };
     },
   },

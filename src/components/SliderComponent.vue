@@ -1,9 +1,3 @@
-<template v-if="films">
-  <div class="films-container">
-    <ItemComponent v-for="film in films" :key="film.id" :film="film" />
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 import ItemComponent from "@/components/ItemComponent.vue";
@@ -20,6 +14,12 @@ export default defineComponent({
   computed: {},
 });
 </script>
+
+<template v-if="films">
+  <div class="films-container">
+    <ItemComponent v-for="film in films" :key="film.id" :film="film" />
+  </div>
+</template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>

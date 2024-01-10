@@ -1,7 +1,3 @@
-<template>
-  <div>sdf</div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 import { useBasketStore } from "@/stores/BasketStore";
@@ -26,5 +22,49 @@ export default defineComponent({
 });
 </script>
 
+<template>
+  <div class="kontakt-container">
+    <div class="kontakt-content">
+      <div class="adress">
+        <h2>3D kino Partizanske</h2>
+        <p>Generála Svobodu 1141/3, 958 01</p>
+        <p>Partizanske</p>
+        <p>958 01</p>
+        <h3>+421964536743</h3>
+      </div>
+      <iframe
+        class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2637.185547951114!2d18.364932976871813!3d48.62543131707187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4714cea8aa98a78b%3A0xdd7012ecdad8c8e9!2sPanoramatick%C3%A9%203D%20kino!5e0!3m2!1ssk!2ssk!4v1704877162722!5m2!1ssk!2ssk"
+        width="600"
+        height="450"
+        style="border: 0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </div>
+</template>
+
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style>
+.kontakt-container {
+  display: flex;
+  justify-content: center;
+  .kontakt-content {
+    display: inherit;
+    width: fit-content;
+    padding: 58px;
+    background-color: var(--second-color);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: var(--text-color);
+    .adress {
+      width: fit-content;
+      padding: 24px;
+    }
+    .map {
+      margin-top: 24px;
+    }
+  }
+}
+</style>

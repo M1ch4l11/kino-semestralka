@@ -13,6 +13,7 @@ export interface FilmItem {
   time: string;
   price: number;
   link: string;
+  linkIframe: string;
 }
 
 export interface BasketItem {

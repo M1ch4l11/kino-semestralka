@@ -1,10 +1,3 @@
-<template v-if="AktualProgram">
-  <div class="day-container" v-for="day in AktualProgram" :key="day.id">
-    <h2>{{ day.day }}</h2>
-    <SliderComponent :films="day.content"></SliderComponent>
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 import SliderComponent from "@/components/SliderComponent.vue";
@@ -21,6 +14,13 @@ export default defineComponent({
   },
 });
 </script>
+
+<template v-if="AktualProgram">
+  <div class="day-container" v-for="day in AktualProgram" :key="day.id">
+    <h2>{{ day.day }}</h2>
+    <SliderComponent :films="day.content"></SliderComponent>
+  </div>
+</template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>

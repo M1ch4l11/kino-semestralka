@@ -25,6 +25,7 @@ export default defineComponent({
   },
   methods: {
     zajednatListok(filmItem: FilmItem): void {
+      if (this.tiketsNumber < 1) return;
       this.basketStore.addItem(this.getBasketItem(filmItem));
       this.basketStore.totalPrice += filmItem.price * this.tiketsNumber;
       this.setToasterMessage(filmItem);
@@ -72,7 +73,7 @@ export default defineComponent({
       <iframe
         width="560"
         height="315"
-        :src="basketStore.filmItem.link"
+        :src="basketStore.filmItem.linkIframe"
         title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -99,7 +100,7 @@ export default defineComponent({
 .film-content {
   display: flex;
   img {
-    height: 40vh;
+    height: 72vh;
     width: 60vh;
     margin: 16px;
     margin-right: 0px;

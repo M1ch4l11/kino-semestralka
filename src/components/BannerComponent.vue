@@ -1,16 +1,3 @@
-<template>
-  <div class="container">
-    <img class="movie-image" :src="imagePath" alt="Not Found" />
-    <div class="description-wrapper">
-      <p>{{ description }}</p>
-      <h3>{{ price }} €</h3>
-      <a :href="link" target="_blank">
-        <img class="play-image" src="/play_icon.png"
-      /></a>
-    </div>
-  </div>
-</template>
-
 <script lang="ts">
 import { defineComponent } from "vue";
 
@@ -23,6 +10,19 @@ export default defineComponent({
   },
 });
 </script>
+
+<template>
+  <div class="container">
+    <img class="movie-image" :src="imagePath" alt="Not Found" />
+    <div class="description-wrapper">
+      <p>{{ description }}</p>
+      <h3>{{ price }} €</h3>
+      <a :href="link" target="_blank">
+        <img class="play-image" src="/play_icon.png"
+      /></a>
+    </div>
+  </div>
+</template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
