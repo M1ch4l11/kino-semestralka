@@ -26,6 +26,8 @@ export default defineComponent({
     order(): void {
       this.actionToaster(this.validOrder());
       this.validOrder() ? this.basketStore.$reset() : "";
+      this.name = "";
+      this.email = "";
     },
     actionToaster(valid: boolean): void {
       this.toaster.titleToaster = valid
@@ -37,7 +39,7 @@ export default defineComponent({
       this.toaster.show = true;
       setTimeout(() => {
         this.toaster.show = false;
-      }, 2000);
+      }, 3000);
     },
     validOrder(): boolean {
       return this.basketStore.totalPrice != 0 && !!this.name && !!this.email;

@@ -6,8 +6,6 @@ export default defineComponent({
     title: String,
     message: String,
   },
-  components: {},
-  methods: {},
 });
 </script>
 
